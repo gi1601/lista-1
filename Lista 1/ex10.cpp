@@ -2,23 +2,27 @@
 
 using namespace std;
 
-main(){
+int main(void){
 	setlocale(LC_ALL, "Portuguese");
 	
-	int n1, n2, n3;
+	int a, b, c;
+	scanf("%d", &a);
+	scanf("%d", &b);
+	scanf("%d", &c);
+	if(a < b)
+		if (b < c) printf("%4d%4d%4d\n", a, b, c);
+	else
+	    if (a < c) printf("%4d%4d%4d\n", a, c, b);
+	    else printf("%4d%4d%4d\n", c, a, b);
+	    
+	else 
+	    if (b < c)
+	        if ( a < c)printf("%4d%4d%4d\n", b, a, c);
+	        else printf("%4d%4d%4d\n", b, c, a);
+	    else printf("%4d%4d%4d\n", c, b, a);
 	
-	cout<<"Informe o primeiro número: ";
-	cin>> n1;
-	
-	cout<<"Informe o segundo número: ";
-	cin>> n2;
-	
-	cout<<"Informe o terceiro número: ";
-	cin>>n3; 
-	
-	if(n1== n2 && n1==n3 ){
-		cout<<"Os três números são iguais";
-	}else if(n1>n2 && n1>n3 && n2>n3){
-		cout<<"A ordem crescente é "<< n1 << ", " << n2 <<",  " << n3;
-	}
+	return 0;   
+	    
+		  
+	  	      
 }

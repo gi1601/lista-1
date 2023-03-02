@@ -7,7 +7,7 @@ main() {
 	
 	int numero, armazenar;
 	
-	cout<<"Informe um número inteiro";
+	cout<<"Informe um número inteiro: ";
 	cin>>numero;
 	
 	do{

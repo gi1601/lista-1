@@ -8,10 +8,10 @@ main() {
 	string nome;
 	int idade;
 	
-	cout<<"Informe o seu nome";
+	cout<<"Informe o seu nome: ";
 	cin>> nome;
 	
-	cout<< "Informe sua idade";
+	cout<< "Informe sua idade: ";
 	cin>> idade;
 	
 	if(idade<18){

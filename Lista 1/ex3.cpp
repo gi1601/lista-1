@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-bool ePrimo(int n ,int nn);
+bool primo(int n ,int nn);
 
 int main(void)
 {
   int n = 0;
   
-  printf("Digite um numero: ");
+  printf("Informe um numero: ");
   scanf("%d" ,&n);
-  if (ePrimo(n ,1))
+  if (primo(n ,1))
     printf("%d e primo!" ,n);
   else
     printf("%d nao e primo!" ,n);
@@ -17,7 +17,7 @@ int main(void)
   return 0;
 }
 
-bool ePrimo(int n ,int nn)
+bool primo(int n ,int nn)
 {
   static int divs = 0;
   
@@ -27,7 +27,7 @@ bool ePrimo(int n ,int nn)
   if (n % nn == 0)
     divs++;
   
-  ePrimo(n ,nn + 1);
+  primo(n ,nn + 1);
   
   if (divs <= 2)
     return 1;
